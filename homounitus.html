@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SPECIAL PORTAL (HEAVY GOTHIC)</title>
+    <style>
+        body { background-color: #000000; color: #ffffff; font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; position: relative; }
+        
+        /* 1단계 시간 서사 세팅 */
+        .timeline-container { display: flex; flex-direction: column; align-items: center; margin-bottom: 35px; }
+        .timeline-step { font-size: 14px; color: #cccccc; letter-spacing: 5px; text-transform: uppercase; font-weight: bold; font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+        
+        /* 전체 중앙 정렬 박스 (640px 대형 규격 유지) */
+        .center-frame { display: flex; flex-direction: column; width: 640px; text-align: center; align-items: center; }
+
+        /* 중간 크기 정중앙 다음 세대 문구 */
+        .sub-header-top { font-size: 24px; font-weight: 800; text-transform: uppercase; color: #aaaaaa; text-align: center; letter-spacing: 2px; margin-bottom: 30px; width: 100%; font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+
+        /* 압도적인 두께의 고딕체 마스터 상표명 (72px) */
+        .main { font-size: 72px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; margin-bottom: 30px; word-spacing: 14px; font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Arial Black", sans-serif; width: 100%; }
+        
+        /* 인류 조상 3단어 균등 배분 */
+        .evolution-row { display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 24px; font-weight: 800; color: #aaaaaa; text-transform: uppercase; font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; margin-bottom: 40px; }
+        .evo-group { display: inline-block; white-space: nowrap; }
+
+        /* [수정] HOMO ERECTUS 수직 하단에 완벽한 수평 대칭으로 배치되는 버튼 주머니 */
+        .btn-container { display: flex; gap: 20px; z-index: 10; justify-content: center; }
+        
+        /* [고도화] 고딕체 그리드에 완벽하게 녹아드는 직사각형 테두리 버튼 디자인 */
+        .mint-btn { background-color: transparent; color: #ffffff; border: 1px solid #ffffff; padding: 14px 28px; font-size: 14px; font-weight: bold; font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif; letter-spacing: 2px; cursor: pointer; border-radius: 0px; transition: 0.3s; }
+        .mint-btn:hover { background-color: #ffffff; color: #000000; }
+
+        /* 하단 정보 레이어 (네이키드 루트 도메인 고정) */
+        .footer { position: absolute; bottom: 20px; width: 100%; display: flex; justify-content: space-between; padding: 0 40px; box-sizing: border-box; font-size: 12px; color: #555555; font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 시간 축 서사 -->
+    <div class="timeline-container">
+        <div class="timeline-step">Beyond the 100-year horizon</div>
+    </div>
+
+    <!-- 중앙 거대 정렬 프레임 -->
+    <div class="center-frame">
+        <!-- 1. 중간 크기 정중앙 다음 세대 문구 -->
+        <div class="sub-header-top">THE NEXT HUMAN GENERATION</div>
+        
+        <!-- 2. 압도적인 두께의 거대 고딕체 상표명 -->
+        <div class="main">HOMO UNITUS</div>
+        
+        <!-- 3. 인류 조상 3단계 정렬 -->
+        <div class="evolution-row">
+            <div class="evo-group">HOMO HABILIS</div>
+            <div class="evo-group">HOMO ERECTUS</div>
+            <div class="evo-group">HOMO SAPIENS</div>
+        </div>
+
+        <!-- 4. [신설] HOMO ERECTUS의 중심선 밑으로 자석처럼 수직 정렬된 팝업 버튼 블록 -->
+        <div class="btn-container">
+            <button class="mint-btn" onclick="alert('Wallet connection system initializing...')">CONNECT WALLET</button>
+            <button class="mint-btn" onclick="alert('Minting contract verification in progress...')">MINTING NOW</button>
+        </div>
+    </div>
+
+    <!-- 하단 좌측 주소 및 우측 설립 프로젝트명 -->
+    <div class="footer">
+        <div>homounitus.org</div>
+        <div>established by MYTHQUANTICA</div>
+    </div>
+
+</body>
+</html>
